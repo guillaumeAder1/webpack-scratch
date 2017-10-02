@@ -1,4 +1,10 @@
-export default function printMe() {
-    console.log('I get called from print.js!');
-    //https://webpack.js.org/guides/development/
+export default class Test {
+    constructor() {
+        console.log("toto")
+        console.log(this.getLength("sd"))
+    }
+
+    getLength = (test) => {
+        return "test"
+    };
 }
